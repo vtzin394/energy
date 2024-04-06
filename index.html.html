@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://telegra.ph/file/54ce0946b3a74b4a62445.jpg">
+    <title>AtlasEnergy</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-drink'></i>AtlasEnergy</a>
+
+        <ul class="navegação">
+            <li><a href="avalicoes.html">Avaliaçoes</a></li>
+            <li><a href="faleconoco.html">Fale Conosco</a></li>
+        </ul><!--navegação-->
+
+        <ul class="botao1"><!---botao carrinho-->
+            <li><a href="comprar.html"><i class='bx bx-cart-add'></i></a></li>
+        </ul>
+        
+        <ul class="botao2"><!---botao login//menu-->
+            <li><a href="login.html"><i class='bx bx-menu'></i></a></li>
+        </ul>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="https://telegra.ph/file/54ce0946b3a74b4a62445.jpg" class="one">
+            
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+              <h1>AtlasEnergy</h1>
+           <div id="text"></div>
+            <h5>COMPRE ABAIXO</h5>
+            <a href="products.html" class="btn">COMECE A COMPRAR</a>
+        
+            
+        </div><!--home-text-->
+    </section><!--home-->
+
+     <div class=""></div>
+  
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    <script src="script.js"></script>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
